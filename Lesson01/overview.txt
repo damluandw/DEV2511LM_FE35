@@ -28,4 +28,23 @@
     - Lấy thiết kế và viết HTML, CSS, Javascript để tạo thành 1 sản phẩm hoàn chỉnh
 
 Bài lab nộp thông qua classroom: nộp bằng link git.
+Một số câu lệnh git:
+Làm 1 lần:
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
+Kiểm tra:
+    git config --global --list
+
+Up file:
+    git add .
+    git commit -m "nội dung"
+    git push
+
+lấy dữ liệu lần đầu về:
+    git clone link_đường_dẫn
+
+cập nhật dữ liệu mới nhất:
+    git pull
+
+
 

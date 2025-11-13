@@ -1,0 +1,31 @@
+1. HTML (2-3 buổi)
+    - Giới thiệu HTML
+    - Các thẻ HTML
+    - Thuộc tính của thẻ HTML
+2. CSS (2 buổi)
+    - Cách sử dụng CSS
+    - Cách tương tác CSS với HTML
+    - Các thuộc tính và giá trị của thuộc tính CSS
+    - Mức độ ưu tiên trong CSS
+    - Responsive
+3. Javascript (1 buổi)
+    - ngôn ngữ lập trình kịch bản
+    + khai báo/gán/sử dụng biến, mảng, object
+    + cấu trúc điều khiển: if else/ switch case
+    + vòng lặp: for/ do while / while/ foreach
+    + hàm xử lý chuỗi/ mảng
+    - rengular execption: check value
+4. DOM/Jquery (2 buổi)
+    - Dùng để tương tác giữa Javascript và HTML/CSS
+5. Bootstrap (1 buổi)
+    - thư viện giúp code nhanh hơn (HTML,CSS, Javascript)
+6. Photoshop (1 buổi)
+    - cắt ảnh
+    - đo khoảng cách
+    - đo bảng màu
+    - kiểm tra font chữ và font size
+7. Thực hành Project (2-3 buổi)
+    - Lấy thiết kế và viết HTML, CSS, Javascript để tạo thành 1 sản phẩm hoàn chỉnh
+
+Bài lab nộp thông qua classroom: nộp bằng link git.
+

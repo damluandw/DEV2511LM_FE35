@@ -47,4 +47,21 @@ cập nhật dữ liệu mới nhất:
     git pull
 
 
+Một số phím tắt nhanh:
+ctrl + C: copy
+ctrl + V: paste
+ctrl + X : cut
+ctrl + Z: quay lại
+ctrl + Y: tiến lên
 
+alt + shift + F : format code 
+alt + shift + mũi tên lên/xuống : copy
+ctrl + D : khoanh các nội dung giống nhau (trỏ/sửa nhiều cùng 1 lúc)
+tab : nhảy đến phần code tiếp theo
+
+tag:  là thẻ HTML 
+tag01#tên_id.tên_class>tag02#tên_id.tên_class*n: Tạo n thẻ tag02 nằm bên trong thẻ tag01
+
+VD:
+table>thead>tr*số_lượng>th*số_lượng
+=> 

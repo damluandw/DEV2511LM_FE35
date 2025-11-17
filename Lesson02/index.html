@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <!-- <form action="" method="post" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="profilePic">Upload Profile Picture:</label>
+        <input type="file" id="profilePic" name="profilePic" accept="image/*"><br><br>
+
+        <input type="submit" value="Submit">
+    </form> -->
+        <form action>
+            <div>
+                <!-- type: text -->
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" size="30"
+                    placeholder="Enter your username" value="devmaster"
+                    required>
+            </div>
+            <div>
+                <label for="password">password</label>
+                <!-- type: password -->
+                <input type="password" name="password" id="password"
+                    placeholder="password">
+            </div>
+            <div>
+                <!-- type: hidden - ẩn -->
+                <input type="hidden" name="id" id="id" >
+            </div>
+            <div>
+                <!-- type: checkbox - chọn nhiều giá trị cùng 1 lúc-->
+                <p>Sở thích của bạn:</p>
+                <input type="checkbox" name="hobby" id="dabong" value="đá bóng"
+                    checked>
+                <label for="dabong">Đá bóng</label>
+                <input type="checkbox" name="hobby" id="docsach"
+                    value="đọc sách" checked>
+                <label for="docsach">đọc sách</label>
+                <input type="checkbox" name="hobby" id="xemphim"
+                    value="xem phim">
+                <label for="xemphim">Xem phim</label>
+            </div>
+            <div>
+                <!-- type: radio - chọn 1 trong các giá trị-->
+                <p>Giới tính của bạn:</p>
+                <input type="radio" name="gender" id="male" value="male"
+                    checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">other</label>
+            </div>
+            <div>
+                <!-- type: button, submit -->
+                <input type="button" name="button" id="button" value="click me">
+                <button>click me</button>
+                <input type="submit" name="submit" id="submit"
+                    value="sumbit click">
+            </div>
+            <!--  -->
+            <div>
+                <!-- type: reset -->
+                <input type="reset" name="reset" id="reset" value="reset form">
+            </div>
+            <div>
+                <!-- type: file -->
+                <label for="profilePic">Upload Profile Picture:</label>
+                <input type="file" id="profilePic" name="profilePic"
+                    accept="image/*">
+            </div>
+            <div>
+                <!-- type color -->
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color" value="#ff0000">
+            </div>
+            <div>
+                <!-- type: date/datetime-local - ngày tháng năm -->
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday" value="2000-01-01">
+            </div>
+            <div>
+                <!-- type: email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"
+                    placeholder="email@gmail.com">
+            </div>
+            <div>
+                <!-- type: number -->
+                <label for="quantity">Quantity (1-10):</label>
+                <input type="number" id="quantity" name="quantity" min="1"
+                    max="10" value="1">
+            </div>
+            <div>
+                <!-- type: tel -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                    placeholder="+84 123 456 789">
+            </div>
+            <div>
+                <!-- type: url -->
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website"
+                    placeholder="https://example.com">
+            </div>
+            <div>
+                <!-- type: range -->
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" name="volume" min="0"
+                    max="100" value="50">
+            </div>
+            <div>
+                <!-- type: search -->
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search" 
+                    placeholder="Search...">
+            </div>
+            <div>
+                <!-- type: textarea -->
+                <label for="mota">Mô tả</label>
+                <textarea name="mota" id="mota"  cols="60" rows="6"></textarea>
+            </div>
+            <div>
+                <select name="tinh" id="tinh">
+                    <option value="hn">Hà Nội</option>
+                    <option value="hcm">Hồ Chí Minh</option>
+                    <option value="dn">Đà Nẵng</option>
+                </select>
+            </div>
+        </form>
+
+    </body>
+</html>

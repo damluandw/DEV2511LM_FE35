@@ -1,0 +1,43 @@
+1. Giới thiệu HTML
+- HTML : ngôn ngữ siêu văn bản (kp là ngôn ngữ lập trình)
+- Cấu trúc 1 trang HTML
+- Một số thẻ thông dụng:
+    + Phân theo tính chất
+        ++ Thẻ inline:
+        ++ Thẻ block: 
+    + Phân theo cách viết:
+        ++ Cặp thẻ đóng và mở
+        ++ Thẻ đơn 
+- Một số thuộc tính (attribute) của thẻ HTML: class,id, src, href, type, tên_tự_đặt,...
+
+2. Table 
+- cấu trúc thẻ của bảng:
+<table>
+    <thead>
+        <tr>
+            <th>...</th>
+            ...
+            <th>...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>...</td>
+            ...
+            <td>...</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>...</td>
+            ...
+            <td>...</td>
+        </tr>
+    </tfoot>
+</table>
+
+- Một số thuộc tính của bảng: border, cellspacing, cellpadding, align, colspan, rowspan
+
+
+
+

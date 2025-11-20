@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cú pháp tương tác CSS với HTML</title>
+        <style>
+        /* Tương tác thông qua tên id của thẻ HTML - #tên_id */
+        #title{
+            color: red;
+        }
+        /* Tương tác thông qua tên thẻ HTML - tên_thẻ*/
+        h3{
+            color: blue;
+        }
+        /* Tương tác thông qua tên class của thẻ HTML - .tên_class */
+        .text-green{
+            color: green;
+        }
+        .bg-red{
+            background-color: red;
+        }
+        /* Tương tác thông qua tên thuộc tính(attr) của thẻ HTML - [tên_thuộc_tính] */
+        [title]{
+            color: orange;
+        }
+        [type="text"]{
+            border: 2px solid blue;
+        }
+        /* [class]{
+            background-color: yellow;
+        } */
+    </style>
+    </head>
+    <body>
+        <!-- Tương tác thông qua tên id của thẻ HTML -->
+        <h2 id="title">Tương tác thông qua id của thẻ HTML</h2>
+        <!-- Tương tác thông qua tên thẻ HTML -->
+        <h3>Tương tác thông qua tên thẻ HTML</h3>
+        <h3>Tương tác thông qua tên thẻ HTML</h3>
+        <h3>Tương tác thông qua tên thẻ HTML</h3>
+        <!-- Tương tác thông qua tên class của thẻ HTML -->
+        <h4 class="text-green bg-red">Tương tác thông qua class của thẻ HTML</h4>
+        <h4 class="text-green">Tương tác thông qua class của thẻ HTML</h4>
+        <h4 class="text-green bg-red">Tương tác thông qua class của thẻ HTML</h4>
+        <!-- Tương tác thông qua tên thuộc tính(attr) của thẻ HTML -->
+        <p title="Devmaster">Tương tác thông qua thuộc tính(attr) của thẻ
+            HTML</p>
+        <p title="Devmaster">Tương tác thông qua thuộc tính(attr) của thẻ
+            HTML</p>
+        <input type="text" name="username" id="username"
+            placeholder="Tương tác thông qua thuộc tính(attr) của thẻ HTML">
+        <input type="password" name="username" id="username"
+            placeholder="Tương tác thông qua thuộc tính(attr) của thẻ HTML">
+    </body>
+</html>

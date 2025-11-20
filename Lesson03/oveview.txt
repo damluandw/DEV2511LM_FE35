@@ -1,0 +1,42 @@
+1. Giới thiệu về HTML
+2. Cấu trúc trong file HTML
+3. Cấu trúc của 1 trang HTML
+    + Header
+    + Section 
+    + Footer
+4. Cấu trúc thẻ HTML
+    + gồm 1 thẻ đóng và thẻ mở: Nội dung hiển thị là nội dung nằm trong cặp thẻ
+    + 1 thẻ vừa là thẻ đóng vừa là thẻ mở: nội dung hiển thị là tính chất của thẻ/ value
+5. Tính chất block và inline của thẻ
+6. Tên thẻ thường sử dụng
+    + header, section, footer
+    + div,p, nav,...
+    + thẻ danh sách: ul, ol, li,..
+    + thẻ siêu liên kết: a
+    + thẻ tiêu đề: h1->h6
+    + thẻ hình ảnh: img
+    + thẻ video: video
+    + thẻ audio: audio
+    + bảng: 
+        ++ table, thead, tbody, tfoot
+        ++ tr, th, td
+        ++ một số thuộc tính của bảng: colspan, rowspan, border, cellspacing, cellpadding, align, width
+    + form:
+        ++ một số thuộc tính của form: action, method, encrypt
+        ++ input:
+                +++ type: text, password, hidden, email, number, date, datetime-local, radio, checkbox,file, reset, button, sumbmit, range,...
+                +++ name - tương đương với tên biến
+                +++ id - attribute của thẻ
+                +++ size
+                +++ value, max, min, placehoder,...
+        ++ select option
+        ++ textare
+                +++ cols, rows
+7. Một số attr của thẻ HTML
+    + id
+    + class
+    + type, name, size, value, max, min, placehoder,...
+    + attr tự đặt tên
+
+
+

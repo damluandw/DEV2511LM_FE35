@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script>
+            // I. khai báo + gán(set) + gọi(get) Biến, mảng, đối tượng,...
+            // 1.1. Khai báo biến
+            // var, let, const - kiểu dữ liệu
+            // systax: var|let|const ten_bien [= gia_tri_khoi_tao];
+            var a; // khai báo biến a
+            let b; // khai báo biến b
+            const PI = 3.14; // khai báo biến hằng PI và gán giá trị khởi tạo là 3.14
+            // 1.2. Gán giá trị cho biến
+            // systax: ten_bien = gia_tri;
+            a = 10; // gán giá trị 10 cho biến a
+            b = 20; // gán giá trị 20 cho biến b
+            // 1.3. Gọi biến
+            console.log('Giá trị a = ', a);
+            console.log('Giá trị b = ', b);
+            console.log('Giá trị PI = ', PI);
+
+            // 1.2. Mảng (Array)
+            // systax: let|var ten_mang = [phần_tử_1, phần_tử_2, phần_tử_3, ...];
+            let mangSo = [1, "2", true, 4, 5];
+
+            // Gọi phần tử trong mảng
+            console.log('Phần tử thứ 0: ', mangSo[0]);
+
+
+            // 1.3. Đối tượng (Object)
+            // systax: let|var ten_doi_tuong = {
+            //      key_1: gia_tri_1,
+            //      key_2: gia_tri_2,
+            //      key_3: gia_tri_3,
+            //      ...
+            // }
+            let nguoi = {
+                hoTen: "Nguyen Van A",
+                tuoi: 30,
+                isMarried: false,
+                displayInfo: function(){
+                    console.log('Họ tên: ', this.hoTen);
+                    console.log('Tuổi: ', this.tuoi);
+                    console.log('isMarried: ', this.isMarried);
+                }
+
+            };
+            let car = {};
+            // Gọi thuộc tính trong đối tượng
+            //systax: ten_doi_tuong.key 
+            console.log('Họ tên: ', nguoi.hoTen);
+            console.log('Tuổi: ', nguoi.tuoi);
+            console.log('isMarried: ', nguoi.isMarried);
+            nguoi.displayInfo();
+
+            // Gán giá trị cho thuộc tính trong đối tượng
+            nguoi.tuoi = 31;
+            console.log('Tuổi sau khi gán: ', nguoi.tuoi);
+
+            car.brand = "Toyota";
+            car.model = "Vios";
+            console.log('Car: ', car.brand, car.model);
+
+
+
+            // II. Toán tử 
+            // Toán tử số học: +, -, *, /, %, ++, --
+            // Toán tử so sánh: ==, ===, !=, !==, >, <, >=, <=
+            //== và  === sự khác nhau
+            console.log('5 == "5" : ', 5 == "5"); // true
+            console.log('5 === "5" : ', 5 === "5"); // false
+            // Toán tử logic: &&, ||, !
+            //toán tử gán: =, +=, -=, *=, /=
+
+            // III. Câu điều kiện
+            // 3.1. Câu điều kiện if - else
+            // systax: if(điều kiện){
+            //      khối lệnh thực thi nếu điều kiện đúng
+            // } else {
+            //      khối lệnh thực thi nếu điều kiện sai
+            // }
+
+            // systax: if(điều kiện 1){
+            //      khối lệnh thực thi nếu điều kiện 1 đúng
+            // } else if(điều kiện 2){
+            //      khối lệnh thực thi nếu điều kiện 2 đúng
+            // } else {
+            //      khối lệnh thực thi nếu tất cả điều kiện sai
+            // }
+
+            // 3.2. Câu điều kiện switch - case
+           // systax: switch(biểu_thức){
+            //      case giá_trị_1:
+            //          khối lệnh thực thi nếu biểu_thức == giá_trị_1
+            //          break;
+            //      case giá_trị_2:
+            //          khối lệnh thực thi nếu biểu_thức == giá_trị_2
+            //          break;
+            //      ...
+            //      default:
+            //          khối lệnh thực thi nếu không có case;
+            //          break;
+            // } 
+            var thang = 1;
+            switch(thang){
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    console.log('Tháng ' + thang + ' có 31 ngày');
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    // console.log(new Date().toDateString());
+                    console.log('Tháng ' + thang + ' có 30 ngày');
+                    break;
+                case 2:
+                    console.log('Tháng ' + thang + ' có 28 hoặc 29 ngày');
+                    break;
+                default:
+                    console.log('Giá trị tháng không hợp lệ');
+                    break;
+            }
+
+            // IV. Vòng lặp
+            // 4.1. Vòng lặp for
+            //syntax: for(biểu_thức_khởi_tạo; điều_kiện; biểu_thức_tăng_giảm){
+            //      khối lệnh thực thi trong vòng lặp
+            // }
+            for(let i = 1; i <= 5; i++){
+                console.log('Lần lặp thứ: ', i);
+            }
+            let i =0;
+            for(; i <= 5; i++){
+                console.log('i = ', i);
+                i++;
+            }
+            i=0;
+            for(; i <= 5; ){
+                console.log('i = ', i);
+                i++;
+            }
+            i=0;
+            for(;;){
+                console.log('i trong for = ', i);
+                i++;
+                if(i > 5){
+                    break;
+                }
+            }
+            for(let j = 1 , i=0 ; j <= 3 || i<5 ; j++, i++){
+                
+            }
+
+
+            // 4.2. Vòng lặp while
+            // systax: while(điều_kiện){
+            //      khối lệnh thực thi trong vòng lặp
+            // }
+            let n = 1;
+            while(n <= 5){
+                console.log('n = ', n);
+                n++;
+            }
+
+            //4.3. Vòng lặp do - while
+            // systax: do{
+            //      khối lệnh thực thi trong vòng lặp
+            // } while(điều_kiện);
+            let m = 10;
+            do{
+                console.log('m = ', m);
+                m++;
+            } while(m <= 5);
+
+            // 4.4. Vòng lặp for...in/ foreach
+            // V. Hàm 
+            // 5.1. Cách khai báo hàm
+            // systax: function ten_ham(tham_so_1, tham_so_2, ...){
+            //      khối lệnh thực thi của hàm  
+            // }
+            function tinhTong(a, b){
+                return a + b;
+            }
+            // function tinhTong(a, b,c){
+            //     return a + b + c;
+            // }
+            // 5.2. Gọi hàm
+
+           console.log(tinhTong(5, 10)); // 15
+            // console.log(tinhTong(5, 10, 15)); // 30
+
+            // Một số hàm trong JS alert(), prompt(), confirm()
+            // Hàm alter là hàm đưa ra thông báo
+            // alert('Hello Devmaster');
+            // // Hàm prompt là hàm nhập dữ liệu
+            // var name = prompt('Mời bạn nhập tên: ');
+            // alert('Chào bạn ' + name);
+            // // Hàm confirm là hàm xác nhận
+            // var isOk = confirm('Bạn có đồng ý không?');
+            // console.log('isOk = ', isOk);
+
+        </script>
+    </body>
+</html>

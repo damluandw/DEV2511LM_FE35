@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đăng nhập</title>
+        <style>
+            .err {
+                color: red;
+                font-size: 16px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <p class="err">Không được để trống</p>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <p class="err">Không được để trống</p>
+                <p class="err">Email không đúng định dạng</p>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <p class="err">Không được để trống</p>
+            </div>
+            <input type="submit" value="Đăng ký">
+        </form>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script>
+            var regxEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            var regxPassword = /^.{8,}$/;
+            $('input').on('blur', function() {
+                if(this.value === "") {
+                    $(this).next('.err').show();
+                    return;
+                    // $(this).next('.err').css('display', 'block');
+                    // $(this).siblings('.err').show();
+                } else {
+                    $(this).next('.err').hide();
+                }
+                // console.log(this.type);
+                if (this.type === 'email') {
+                    if (regxEmail.test(this.value)) {
+                        $(this).next('.err').next('.err').hide();
+                    } else {
+                        $(this).next('.err').next('.err').show();
+                       
+                    }
+                }
+
+                if (this.type === 'password') {
+                    if (regxPassword.test(this.value)) {
+                        console.log('Mật khẩu đúng định dạng');
+                        $(this).siblings('.err').hide();
+                    } else {
+                        console.log('Mật khẩu KHÔNG đúng định dạng');
+                        // alert('Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ cái và số');
+                        $(this).siblings('.err').text('Mật khẩu phải có ít nhất 8 ký tự');
+                        $(this).siblings('.err').show();
+                        
+                    }
+                }
+
+
+            });
+        </script>
+    </body>
+</html>

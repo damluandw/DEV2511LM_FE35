@@ -288,10 +288,10 @@
             }
 
             // 3. Lặp qua mảng dữ liệu và gọi hàm render
-            function renderProductList(listpoduct) {
-                console.log(listpoduct);
-                for(var i=0; i<listpoduct.length; i++) {
-                    var productHTML = renderProduct(listpoduct[i]);
+            function renderProductList(listproduct) {
+                console.log(listproduct);
+                for(var i=0; i<listproduct.length; i++) {
+                    var productHTML = renderProduct(listproduct[i]);
                     $('#list-product').append(productHTML);
                 }
             }
@@ -357,7 +357,7 @@
                                     dataType: 'json', // Ensures jQuery parses the response as JSON
                                     success: function(data) {
                                         // data is the parsed JSON object
-                                        console.log(data);
+                                        console.log("listpro",  data);
                                     },
                                     error: function(jqxhr, textStatus, error) {
                                         // Handle errors here

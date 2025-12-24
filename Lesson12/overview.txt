@@ -1,0 +1,85 @@
+1. HTML
+    - thẻ HTML:
+        + cặp thẻ: <tên_thẻ> nội_dung_khác </tên_thẻ>
+        + thẻ đơn: <tên_thẻ/>
+    - tính chất thẻ HTML:  2 tính chất mặc định: block/inline
+    - Phân biệt theo chức năng của thẻ:
+        + table, tr, td, th, thead, tbody, tfoot,...
+        + form/input,..
+        + header, section, footer, nav, div,...
+        + inline: span,b, a, i, u ....
+        + ul, li, ol,....
+        + ....
+    - Thuộc tính (attr) của thẻ: id, class, type, name, max, min, value ....
+2. CSS
+    - Các cách sử dụng CSS
+        +
+        +
+        +
+    - Cách tương tác với thẻ HTML
+        +
+        +
+        +
+        +
+    - Các bộ chọn trong CSS
+        + tag01 tag02
+        + tag01>tag02
+        + tag01 ~ tag02
+        + tag01 + tag02
+        + tag01, tag02
+        + hover,after, before...
+    - Quy tắc ghi đè CSS (mức độ ưu tiên)
+        + CSS viết sau sẽ được ưu tiên 
+        + !important -> id -> class -> [tên_thuộc_tính] -> tên_thẻ
+        + bộ chọn càng gần/chi tiết đến thẻ càng được ưu tiên
+
+    - Thuộc tính CSS và giá trị thuộc tính CSS:
+
+    - responsive: 
+
+3. Javascript
+    - ngôn ngữ lập trình kịch bản
+    - Các cách sử dụng Javascript
+        +
+        +
+        +
+    - biến
+    - cấu trúc điều khiển
+    - vòng lặp
+    - mảng
+    - hàm
+    - object
+    - Date
+    - Xử lý chuỗi
+
+4. DOM/Jquerry
+    - Sự kiện: + viết trên thẻ HTML: onclick, ondbclick, onblur,...
+                + viết trên thẻ/file script: D
+                        ++ DOM: thẻ_nào???.addListenEvent('sự_kiện', hàm_xử lý()){}
+                        ++ Jquerry:  thẻ_nào???.on('sự_kiện', hàm_xử lý()){}
+    - thay đổi class:
+            + DOM: thẻ_nào.display.tên_thuộc_tính_CSS = giá_trị_thuộc_tính_CSS
+            + Jquerry: thẻ_nào.css(tên_thuộc_tính_CSS, giá_trị_thuộc_tính_CSS)
+    - thay đổi HTML:
+            + DOM: thẻ_nào.innerHTML = giá_tri_HTML_thêm
+            + Jquerry: thẻ_nào.append(giá_tri_HTML_thêm)
+    - thay đổi vị trí tương tác với thẻ HTML
+            + DOM: child, parent, siblings,...
+            + Jquerry: child(), parent(), siblings(), next(),...
+    - tương tác với các attr khác của thẻ HTML
+5. Bootstrap
+    - Cách sử dụng Bootstrap: thư viện CSS kết hợp 1 phần Jquerry
+        + download và import
+        + sử dụng thư viện onl
+    - Cách làm việc với Bootstrap
+        + copy theo mẫu
+        + sử dụng class có sẵn của Bootstrap
+    => sử dụng kiến thức HTML/CSS để ghi đè sao cho phù hợp với trang thiết kế
+6. Photoshop
+    - cắt ảnh
+    - đo kích thước
+    - font/ kích thước font
+    - màu sắc
+7. Rangular Exception, Fontawsome
+
+8. Thư viện Slick
